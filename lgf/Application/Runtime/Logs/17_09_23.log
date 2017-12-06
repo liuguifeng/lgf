@@ -1,0 +1,28 @@
+[ 2017-09-23T14:29:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001686s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.008054s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.006710s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1506148142 ) AND ( `promote_end_time` >= 1506148142 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.004716s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000972s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000496s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000269s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001876s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001950s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001495s ]
+

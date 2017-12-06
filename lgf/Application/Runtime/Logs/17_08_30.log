@@ -1,0 +1,452 @@
+[ 2017-08-30T03:13:55+08:00 ] 106.11.242.2 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.022794s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.015050s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1504034035 ) AND ( `promote_end_time` >= 1504034035 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000396s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000355s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000324s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpstudy\WWW\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-08-30T17:38:18+08:00 ] 27.38.250.79 /qqlogin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025126s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.025401s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.022651s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1504085898 ) AND ( `promote_end_time` >= 1504085898 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000412s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000379s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000339s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpstudy\WWW\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.230186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.230270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020837s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\View.class.php:95) C:\phpstudy\WWW\shop34\Connect2.1\class\Oauth.class.php 第 50 行.
+
+[ 2017-08-30T17:38:21+08:00 ] 27.38.250.79 /qqlogin.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.013493s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+
+[ 2017-08-30T17:38:22+08:00 ] 27.38.250.79 /qqlogin.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.012323s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000905s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+
+[ 2017-08-30T17:38:26+08:00 ] 140.207.185.112 /qqlogin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.012536s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000239s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.009094s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1504085906 ) AND ( `promote_end_time` >= 1504085906 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000314s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000312s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000438s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpstudy\WWW\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\View.class.php:95) C:\phpstudy\WWW\shop34\Connect2.1\class\Oauth.class.php 第 50 行.
+
+[ 2017-08-30T17:38:32+08:00 ] 140.207.128.193 /qqlogin.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.014549s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+
+[ 2017-08-30T17:38:36+08:00 ] 101.226.66.172 /qqlogin.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.015780s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+
+[ 2017-08-30T17:39:07+08:00 ] 27.38.250.79 /qqlogin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.013806s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.009082s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1504085947 ) AND ( `promote_end_time` >= 1504085947 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000340s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000325s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000330s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpstudy\WWW\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\View.class.php:95) C:\phpstudy\WWW\shop34\Connect2.1\class\Oauth.class.php 第 50 行.
+
+[ 2017-08-30T17:39:08+08:00 ] 27.38.250.79 /qqlogin.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.012251s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+
+[ 2017-08-30T17:39:09+08:00 ] 27.38.250.79 /qqlogin.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.011820s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+
+[ 2017-08-30T17:39:34+08:00 ] 27.38.250.79 /qqlogin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.016006s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.011486s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1504085974 ) AND ( `promote_end_time` >= 1504085974 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000388s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000330s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000318s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpstudy\WWW\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\View.class.php:95) C:\phpstudy\WWW\shop34\Connect2.1\class\Oauth.class.php 第 50 行.
+
+[ 2017-08-30T17:39:35+08:00 ] 27.38.250.79 /qqlogin.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.012936s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+
+[ 2017-08-30T17:39:36+08:00 ] 27.38.250.79 /qqlogin.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.012979s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+
+[ 2017-08-30T17:39:37+08:00 ] 27.38.250.79 /qqlogin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.013631s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.009982s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1504085977 ) AND ( `promote_end_time` >= 1504085977 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000338s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000401s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000317s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpstudy\WWW\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\View.class.php:95) C:\phpstudy\WWW\shop34\Connect2.1\class\Oauth.class.php 第 50 行.
+
+[ 2017-08-30T17:39:38+08:00 ] 27.38.250.79 /qqlogin.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.014269s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+
+[ 2017-08-30T17:39:39+08:00 ] 27.38.250.79 /qqlogin.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.014387s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+
+[ 2017-08-30T17:40:09+08:00 ] 27.38.250.79 /qqlogin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.013800s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.009662s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1504086008 ) AND ( `promote_end_time` >= 1504086008 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000353s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000322s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000328s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpstudy\WWW\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001826s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\View.class.php:95) C:\phpstudy\WWW\shop34\Connect2.1\class\Oauth.class.php 第 50 行.
+
+[ 2017-08-30T17:40:11+08:00 ] 27.38.250.79 /qqlogin.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.015325s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+
+[ 2017-08-30T17:40:13+08:00 ] 27.38.250.79 /qqlogin.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.013341s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\Connect2.1\qqConnectAPI.php 第 2 行.
+
+[ 2017-08-30T17:41:26+08:00 ] 27.38.250.79 /callback.php?code=105F8C7E9C5744A21F333D43F7E92556&state=c39d6d0e365e5b8651b1bf6e54bf0a12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.015417s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.009671s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1504086086 ) AND ( `promote_end_time` >= 1504086086 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000338s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000326s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000332s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000401s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpstudy\WWW\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2017-08-30T17:41:27+08:00 ] 27.38.250.79 /callback.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.015043s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2017-08-30T17:41:28+08:00 ] 27.38.250.79 /callback.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.016964s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+

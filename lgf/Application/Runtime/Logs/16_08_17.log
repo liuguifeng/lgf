@@ -1,0 +1,54 @@
+[ 2016-08-17T00:10:15+08:00 ] 127.0.0.1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.004767s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1471363815 ) AND ( `promote_end_time` >= 1471363815 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000398s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000225s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000225s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004313s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000224s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2016-08-17T00:10:16+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001841s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.012383s ]
+SQL: SELECT `id`,`goods_name`,`sm_logo` FROM `php34_goods` WHERE ( `id` IN ('19') ) ORDER BY INSTR(',19,',CONCAT(',',id,','))  [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001622s ]
+
+[ 2016-08-17T00:10:16+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003109s ]
+

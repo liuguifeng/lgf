@@ -1,0 +1,14 @@
+[ 2017-06-08T23:48:02+08:00 ] 116.252.169.33 /index.php/Home/Member/qqlogin?code=D7395A22C090F3808A108BC2E82A1E16&state=2747427e90c174f376a36d863d021db2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\phpstudy\WWW\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.023398s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000261s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\phpstudy\WWW\shop34\qq\comm\session.php 第 194 行.
+NOTIC: [8] Undefined index: state C:\phpstudy\WWW\shop34\qq\oauth\qq_callback.php 第 10 行.
+NOTIC: [8] Undefined index: access_token C:\phpstudy\WWW\shop34\qq\oauth\qq_callback.php 第 54 行.
+

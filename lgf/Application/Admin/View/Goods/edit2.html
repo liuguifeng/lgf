@@ -1,0 +1,214 @@
+<layout name="Index/header_footer" />
+<div class="tab-div">
+<div id="tabbar-div">
+        <p>
+            <span class="tab-front">基本信息</span>
+            <span class="tab-back">商品描述</span>
+            <span class="tab-back">会员价格</span>
+            <span class="tab-back">商品属性</span>
+            <span class="tab-back">商品相册</span>
+        </p>
+    </div>
+	<div id="tabbody-div">
+    <form name="main_form" method="POST" action="__SELF__" enctype="multipart/form-data" >
+    		<input type="hidden" name="id" value="{$data.id}" />
+	    	<input type="hidden" name="old_type_id" value="{$data.type_id}" />
+        <!--基本信息-->
+			<table class="table_content" cellspacing="1" cellpadding="3" width="100%">
+            <tr>
+                <td class="label">商品名称：</td>
+                <td>
+                    <input size="60" type="text" name="goods_name" value="{$data.goods_name}" />
+	                    <span class="required">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">商品分类：</td>
+                <td>
+<select name="cat_id">
+			    			<option value="">选择分类</option>
+			    			<?php foreach ($catData as $k => $v): 
+			    				if($v['id'] == $data['cat_id'])
+			    					$select = 'selected="selected"';
+			    				else 
+			    					$select = '';
+			    			?>
+			    				<option {$select} value="{$v.id}"><?php echo str_repeat('-',$v['level'] * 8); ?>{$v.cat_name}</option>
+			    			<?php endforeach; ?>
+			    		</select>
+			    		<span class="required">*</span>
+
+                </td>
+            </tr>
+            <tr>
+				 <td class="label">扩展分类：</td>
+	                <td>
+	                	<input onclick="$(this).parent().append($(this).next('select').clone());" type="button" value="添加" />
+	                    <?php 
+	                    // 循环所在的扩展分类，有几个就输出几个下拉框
+	                    foreach ($extCatId as $k1 => $v1): ?>
+	                	<select name="ext_cat_id[]">
+			    			<option value="">选择分类</option>
+			    			<?php foreach ($catData as $k => $v): 
+			    				// 判断选中状态
+			    				if($v['id'] == $v1['cat_id'])
+			    					$select = 'selected="selected"';
+			    				else 
+			    					$select = '';
+			    			?>
+			    				<option {$select} value="{$v.id}"><?php echo str_repeat('-',$v['level'] * 8); ?>{$v.cat_name}</option>
+			    			<?php endforeach; ?>
+			    		</select>
+			    		<?php endforeach; ?>
+	                </td>
+	            </tr>
+	            <tr>
+                <td class="label">品牌：</td>
+                <td>
+                    <select name="brand_id">
+			    			<option value="">选择品牌</option>
+			    			<?php foreach ($brandData as $k => $v): 
+			    				if($v['id'] == $data['brand_id'])
+			    					$select = 'selected="selected"';
+			    				else 
+			    					$select = '';
+			    			?>
+			    				<option {$select} value="{$v.id}">{$v.brand_name}</option>
+			    			<?php endforeach; ?>
+			    		</select>
+					</td>
+            </tr>
+            <tr>
+                <td class="label">市场价：</td>
+                <td>
+                    ￥<input  type="text" size="10" name="market_price" value="{$data.market_price}" />元
+                </td>
+            </tr>
+            <tr>
+                <td class="label">本店价：</td>
+                <td>
+                     ￥ <input  type="text" size="10" name="shop_price" value="{$data.shop_price}" /> 元
+                </td>
+            </tr>
+            <tr>
+                <td class="label">赠送积分：</td>
+                <td>
+                    <input  type="text" name="jifen" value="{$data.jifen}" />
+						如果不填和商品价格相同
+                </td>
+            </tr>
+            <tr>
+                <td class="label">赠送经验值：</td>
+                <td>
+                    <input  type="text" name="jyz" value="{$data.jyz}" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">如果要用积分兑换，需要的积分数：</td>
+                <td>
+                    <input  type="text" name="jifen_price" value="<?php echo $data['jifen_price']; ?>" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">是否促销：</td>
+                <td>
+                    <input  type="text" name="is_promote" value="<?php echo $data['is_promote']; ?>" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">促销价：</td>
+                <td>
+                    <input  type="text" name="promote_price" value="<?php echo $data['promote_price']; ?>" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">促销开始时间：</td>
+                <td>
+                    <input id="promote_start_time" type="text" name="promote_start_time" value="<?php echo $data['promote_start_time']; ?>" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">促销结束时间：</td>
+                <td>
+                    <input id="promote_end_time" type="text" name="promote_end_time" value="<?php echo $data['promote_end_time']; ?>" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">logo原图：</td>
+                <td>
+                	<input type="file" name="logo" /><br /> 
+                	<?php showImage($data['logo'], 100); ?>                </td>
+            </tr>
+            <tr>
+                <td class="label">是否热卖：</td>
+                <td>
+                    <input  type="text" name="is_hot" value="<?php echo $data['is_hot']; ?>" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">是否新品：</td>
+                <td>
+                	<input type="radio" name="is_new" value="1" <?php if($data['is_new'] == '1') echo 'checked="checked"'; ?> />是 
+                	<input type="radio" name="is_new" value="0" <?php if($data['is_new'] == '0') echo 'checked="checked"'; ?> />否 
+                </td>
+            </tr>
+            <tr>
+                <td class="label">是否精品：</td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">是否上架：1：上架，0：下架：</td>
+                <td>
+                	<input type="radio" name="is_on_sale" value="1" <?php if($data['is_on_sale'] == '1') echo 'checked="checked"'; ?> />上架 
+                	<input type="radio" name="is_on_sale" value="0" <?php if($data['is_on_sale'] == '0') echo 'checked="checked"'; ?> />下架 
+                </td>
+            </tr>
+            <tr>
+                <td class="label">seo优化[搜索引擎【百度、谷歌等】优化]_关键字：</td>
+                <td>
+                    <input  type="text" name="seo_keyword" value="<?php echo $data['seo_keyword']; ?>" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">seo优化[搜索引擎【百度、谷歌等】优化]_描述：</td>
+                <td>
+                    <input  type="text" name="seo_description" value="<?php echo $data['seo_description']; ?>" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">商品类型id：</td>
+                <td>
+                    <input  type="text" name="type_id" value="<?php echo $data['type_id']; ?>" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">排序数字：</td>
+                <td>
+                    <input  type="text" name="sort_num" value="<?php echo $data['sort_num']; ?>" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">商品描述：</td>
+                <td>
+                	<textarea id="goods_desc" name="goods_desc"><?php echo $data['goods_desc']; ?></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="99" align="center">
+                    <input type="submit" class="button" value=" 确定 " />
+                    <input type="reset" class="button" value=" 重置 " />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script>
+$("#promote_start_time").datepicker(); 
+$("#promote_end_time").datepicker(); 
+UE.getEditor('goods_desc', {
+	"initialFrameWidth" : "100%",   // 宽
+	"initialFrameHeight" : 80,      // 高
+	"maximumWords" : 10000            // 最大可以输入的字符数量
+});
+</script>

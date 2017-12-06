@@ -1,0 +1,35 @@
+<layout name="Index/header_footer" />
+<div class="main-div">
+    <form name="main_form" method="POST" action="__SELF__" enctype="multipart/form-data" >
+    	<input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
+        <table cellspacing="1" cellpadding="3" width="100%">
+            <tr>
+                <td class="label">广告图：</td>
+                <td>
+                    <input type="file" name="advert" /> 
+                </td>
+            </tr>
+            <tr>
+                <td class="label">广告链接：</td>
+                <td>
+                    <input  type="text" name="url" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">是否启用：</td>
+                <td>
+                    <input type="radio" name="status" value="1" <?php if($data['status']==1):?>checked="checked"<?php endif;?>/>启用
+                    <input type="radio" name="status" value="0" <?php if($data['status']==0):?>checked="checked"<?php endif;?> />禁用 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="99" align="center">
+                    <input type="submit" class="button" value=" 确定 " />
+                    <input type="reset" class="button" value=" 重置 " />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script>
+</script>

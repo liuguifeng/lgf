@@ -1,0 +1,544 @@
+[ 2017-03-28T00:03:30+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1490630610 ) AND ( `promote_end_time` >= 1490630610 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-03-28T00:03:30+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:03:30+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:03:33+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1490630613 ) AND ( `promote_end_time` >= 1490630613 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-03-28T00:03:33+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:03:33+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:03:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1490630614 ) AND ( `promote_end_time` >= 1490630614 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:03:34+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-28T00:03:34+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:04:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+
+[ 2017-03-28T00:04:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1490630679 ) AND ( `promote_end_time` >= 1490630679 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\PHP\apache24\htdocs\shop34\Application\Admin\Model\CategoryModel.class.php:123) E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\PHP\apache24\htdocs\shop34\Application\Admin\Model\CategoryModel.class.php:123) E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\PHP\apache24\htdocs\shop34\Application\Admin\Model\CategoryModel.class.php:123) E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-28T00:04:39+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-28T00:04:39+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:05:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.007001s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1490630712 ) AND ( `promote_end_time` >= 1490630712 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\PHP\apache24\htdocs\shop34\Application\Admin\Model\CategoryModel.class.php:123) E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\PHP\apache24\htdocs\shop34\Application\Admin\Model\CategoryModel.class.php:123) E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\PHP\apache24\htdocs\shop34\Application\Admin\Model\CategoryModel.class.php:123) E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:09:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1490630957 ) AND ( `promote_end_time` >= 1490630957 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001001s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-28T00:13:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.003000s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1490631239 ) AND ( `promote_end_time` >= 1490631239 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\PHP\apache24\htdocs\shop34\Application\Admin\Model\CategoryModel.class.php:123) E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\PHP\apache24\htdocs\shop34\Application\Admin\Model\CategoryModel.class.php:123) E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\PHP\apache24\htdocs\shop34\Application\Admin\Model\CategoryModel.class.php:123) E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:16:33+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.006001s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1490631393 ) AND ( `promote_end_time` >= 1490631393 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:16:33+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:16:33+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:16:36+08:00 ] 127.0.0.1 /index.php/Home/Search/search/cid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `php34_goods_cat` [ RunTime:0.003000s ]
+SQL: SELECT GROUP_CONCAT(DISTINCT goods_id) goods_id FROM `php34_goods_cat` WHERE ( `cat_id` = '6' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT MIN(shop_price) minprice,MAX(shop_price) maxprice FROM `php34_goods` WHERE (  (`cat_id` =6  OR id IN(2))  ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 60 AND 1319 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 1320 AND 2579 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 2580 AND 3839 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 3840 AND 5099 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 5100 AND 6359 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 6360 AND 7619 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 7620 AND 8890 ) ) AND ( `cat_id` = '6' ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `php34_category` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `search_attr_id` FROM `php34_category` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php34_attribute` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`attr_name` FROM `php34_attribute` WHERE ( `id` IN ('') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php34_goods_attr` [ RunTime:0.004000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Home\Controller\SearchController.class.php 第 82 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/702f6d8f948d338e56e15a1333ab749d.php): No such file or directory E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT GROUP_CONCAT(DISTINCT goods_id) goods_id FROM `php34_goods_cat` WHERE ( `cat_id` = '6' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =6 or a.id in(2))  ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT a.id,a.goods_name,`sm_logo`,`shop_price`,IFNULL(SUM(b.goods_number),0) xl,(SELECT count(id) FROM php34_comment c WHERE c.goods_id=a.id) pl FROM php34_goods a LEFT JOIN php34_order_goods b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM php34_order WHERE pay_status=1))  WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =6 or a.id in(2))  ) GROUP BY a.id ORDER BY xl DESC LIMIT 0,24   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] array_fill(): Number of elements must be positive E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 411 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 411 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 444 行.
+NOTIC: [8] Undefined variable: data E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 462 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:16:36+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:16:36+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:17:34+08:00 ] 127.0.0.1 /index.php/Home/Search/search/cid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `php34_goods_cat` [ RunTime:0.003000s ]
+SQL: SELECT GROUP_CONCAT(DISTINCT goods_id) goods_id FROM `php34_goods_cat` WHERE ( `cat_id` = '6' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT MIN(shop_price) minprice,MAX(shop_price) maxprice FROM `php34_goods` WHERE (  (`cat_id` =6  OR id IN(2))  ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 60 AND 1319 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 1320 AND 2579 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 2580 AND 3839 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 3840 AND 5099 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 5100 AND 6359 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 6360 AND 7619 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 7620 AND 8890 ) ) AND ( `cat_id` = '6' ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `php34_category` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `search_attr_id` FROM `php34_category` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php34_attribute` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`attr_name` FROM `php34_attribute` WHERE ( `id` IN ('') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php34_goods_attr` [ RunTime:0.003000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Home\Controller\SearchController.class.php 第 82 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/702f6d8f948d338e56e15a1333ab749d.php): No such file or directory E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT GROUP_CONCAT(DISTINCT goods_id) goods_id FROM `php34_goods_cat` WHERE ( `cat_id` = '6' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =6 or a.id in(2))  ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT a.id,a.goods_name,`sm_logo`,`shop_price`,IFNULL(SUM(b.goods_number),0) xl,(SELECT count(id) FROM php34_comment c WHERE c.goods_id=a.id) pl FROM php34_goods a LEFT JOIN php34_order_goods b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM php34_order WHERE pay_status=1))  WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =6 or a.id in(2))  ) GROUP BY a.id ORDER BY xl DESC LIMIT 0,24   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] array_fill(): Number of elements must be positive E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 411 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 411 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 444 行.
+NOTIC: [8] Undefined variable: data E:\PHP\apache24\htdocs\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 462 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-28T00:17:34+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-28T00:17:35+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\apache24\htdocs\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

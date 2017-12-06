@@ -1,0 +1,448 @@
+[ 2016-09-07T23:30:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.129704s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1473262234 ) AND ( `promote_end_time` >= 1473262234 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.064667s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.021989s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001417s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001056s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000413s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.092221s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000928s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.263269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.263610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010745s ]
+
+[ 2016-09-07T23:30:34+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001235s ]
+
+[ 2016-09-07T23:30:34+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2016-09-07T23:30:38+08:00 ] 127.0.0.1 /index.php/Home/Search/search/cid/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.006609s ]
+SQL: SHOW COLUMNS FROM `php34_goods_cat` [ RunTime:0.071900s ]
+SQL: SELECT GROUP_CONCAT(DISTINCT goods_id) goods_id FROM `php34_goods_cat` WHERE ( `cat_id` = '8' ) LIMIT 1   [ RunTime:0.015079s ]
+SQL: SELECT MIN(shop_price) minprice,MAX(shop_price) maxprice FROM `php34_goods` WHERE (  (`cat_id` =8 )  ) LIMIT 1   [ RunTime:0.013250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 0 AND 1259 ) ) AND (  (`cat_id` =8 )  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000625s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 1260 AND 2529 ) ) AND (  (`cat_id` =8 )  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000482s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 2530 AND 3799 ) ) AND (  (`cat_id` =8 )  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000525s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 3800 AND 5069 ) ) AND (  (`cat_id` =8 )  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000540s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 5070 AND 6339 ) ) AND (  (`cat_id` =8 )  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000589s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 6340 AND 7609 ) ) AND (  (`cat_id` =8 )  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000521s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 7610 AND 8890 ) ) AND ( `cat_id` = '8' ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.008514s ]
+SQL: SELECT `search_attr_id` FROM `php34_category` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `php34_attribute` [ RunTime:0.072903s ]
+SQL: SELECT `id`,`attr_name` FROM `php34_attribute` WHERE ( `id` IN ('') )  [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `php34_goods_attr` [ RunTime:0.040715s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Home\Controller\SearchController.class.php 第 79 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/016b996bdc4604404ff72fd5c6906af8.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT GROUP_CONCAT(DISTINCT goods_id) goods_id FROM `php34_goods_cat` WHERE ( `cat_id` = '8' ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =8 )  ) LIMIT 1   [ RunTime:0.000780s ]
+SQL: SELECT a.id,a.goods_name,`sm_logo`,`shop_price`,IFNULL(SUM(b.goods_number),0) xl,(SELECT count(id) FROM php34_comment c WHERE c.goods_id=a.id) pl FROM php34_goods a LEFT JOIN php34_order_goods b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM php34_order WHERE pay_status=1))  WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =8 )  ) GROUP BY a.id ORDER BY xl DESC LIMIT 0,24   [ RunTime:0.214982s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.008715s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000253s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 150 行.
+NOTIC: [2] array_fill() [<a href='function.array-fill'>function.array-fill</a>]: Number of elements must be positive E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 420 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 420 行.
+NOTIC: [8] Undefined variable: data E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 471 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2016-09-07T23:30:39+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001446s ]
+
+[ 2016-09-07T23:30:39+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2016-09-07T23:30:48+08:00 ] 127.0.0.1 /index.php/Home/Search/search/cid/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.005133s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004042s ]
+SQL: SELECT `search_attr_id` FROM `php34_category` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SHOW COLUMNS FROM `php34_attribute` [ RunTime:0.005562s ]
+SQL: SELECT `id`,`attr_name` FROM `php34_attribute` WHERE ( `id` IN ('') )  [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `php34_goods_attr` [ RunTime:0.006209s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Home\Controller\SearchController.class.php 第 79 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/016b996bdc4604404ff72fd5c6906af8.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `php34_goods_cat` [ RunTime:0.004094s ]
+SQL: SELECT GROUP_CONCAT(DISTINCT goods_id) goods_id FROM `php34_goods_cat` WHERE ( `cat_id` = '8' ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =8 )  ) LIMIT 1   [ RunTime:0.000209s ]
+SQL: SELECT a.id,a.goods_name,`sm_logo`,`shop_price`,IFNULL(SUM(b.goods_number),0) xl,(SELECT count(id) FROM php34_comment c WHERE c.goods_id=a.id) pl FROM php34_goods a LEFT JOIN php34_order_goods b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM php34_order WHERE pay_status=1))  WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =8 )  ) GROUP BY a.id ORDER BY xl DESC LIMIT 0,24   [ RunTime:0.000217s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004816s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 150 行.
+NOTIC: [2] array_fill() [<a href='function.array-fill'>function.array-fill</a>]: Number of elements must be positive E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 420 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 420 行.
+NOTIC: [8] Undefined variable: data E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 471 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2016-09-07T23:30:48+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2016-09-07T23:30:49+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001552s ]
+
+[ 2016-09-07T23:30:54+08:00 ] 127.0.0.1 /index.php/Home/Search/search/cid/8/ob/shop_price/ow/asc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.007865s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004692s ]
+SQL: SELECT `search_attr_id` FROM `php34_category` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000204s ]
+SQL: SHOW COLUMNS FROM `php34_attribute` [ RunTime:0.005105s ]
+SQL: SELECT `id`,`attr_name` FROM `php34_attribute` WHERE ( `id` IN ('') )  [ RunTime:0.000236s ]
+SQL: SHOW COLUMNS FROM `php34_goods_attr` [ RunTime:0.004039s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Home\Controller\SearchController.class.php 第 79 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/016b996bdc4604404ff72fd5c6906af8.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `php34_goods_cat` [ RunTime:0.004089s ]
+SQL: SELECT GROUP_CONCAT(DISTINCT goods_id) goods_id FROM `php34_goods_cat` WHERE ( `cat_id` = '8' ) LIMIT 1   [ RunTime:0.000216s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =8 )  ) LIMIT 1   [ RunTime:0.000219s ]
+SQL: SELECT a.id,a.goods_name,`sm_logo`,`shop_price`,IFNULL(SUM(b.goods_number),0) xl,(SELECT count(id) FROM php34_comment c WHERE c.goods_id=a.id) pl FROM php34_goods a LEFT JOIN php34_order_goods b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM php34_order WHERE pay_status=1))  WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =8 )  ) GROUP BY a.id ORDER BY shop_price asc LIMIT 0,24   [ RunTime:0.001850s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004819s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000252s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 150 行.
+NOTIC: [2] array_fill() [<a href='function.array-fill'>function.array-fill</a>]: Number of elements must be positive E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 420 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 420 行.
+NOTIC: [8] Undefined variable: data E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 471 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2016-09-07T23:30:54+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2016-09-07T23:30:54+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001164s ]
+
+[ 2016-09-07T23:30:56+08:00 ] 127.0.0.1 /index.php/Home/Search/search/cid/8/ob/shop_price/ow/asc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002231s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.006825s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.006200s ]
+SQL: SELECT `search_attr_id` FROM `php34_category` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SHOW COLUMNS FROM `php34_attribute` [ RunTime:0.005162s ]
+SQL: SELECT `id`,`attr_name` FROM `php34_attribute` WHERE ( `id` IN ('') )  [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `php34_goods_attr` [ RunTime:0.004470s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Home\Controller\SearchController.class.php 第 79 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/016b996bdc4604404ff72fd5c6906af8.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `php34_goods_cat` [ RunTime:0.005411s ]
+SQL: SELECT GROUP_CONCAT(DISTINCT goods_id) goods_id FROM `php34_goods_cat` WHERE ( `cat_id` = '8' ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =8 )  ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SELECT a.id,a.goods_name,`sm_logo`,`shop_price`,IFNULL(SUM(b.goods_number),0) xl,(SELECT count(id) FROM php34_comment c WHERE c.goods_id=a.id) pl FROM php34_goods a LEFT JOIN php34_order_goods b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM php34_order WHERE pay_status=1))  WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =8 )  ) GROUP BY a.id ORDER BY shop_price asc LIMIT 0,24   [ RunTime:0.000246s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004098s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000216s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 150 行.
+NOTIC: [2] array_fill() [<a href='function.array-fill'>function.array-fill</a>]: Number of elements must be positive E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 420 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 420 行.
+NOTIC: [8] Undefined variable: data E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 471 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001304s ]
+
+[ 2016-09-07T23:30:56+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2016-09-07T23:30:56+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001321s ]
+
+[ 2016-09-07T23:31:09+08:00 ] 127.0.0.1 /index.php/Home/Search/search/cid/34/ob/shop_price/ow/asc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.004692s ]
+SQL: SHOW COLUMNS FROM `php34_goods_cat` [ RunTime:0.004046s ]
+SQL: SELECT GROUP_CONCAT(DISTINCT goods_id) goods_id FROM `php34_goods_cat` WHERE ( `cat_id` = '34' ) LIMIT 1   [ RunTime:0.000522s ]
+SQL: SELECT MIN(shop_price) minprice,MAX(shop_price) maxprice FROM `php34_goods` WHERE (  (`cat_id` =34 )  ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 0 AND -1 ) ) AND (  (`cat_id` =34 )  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.004388s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 0 AND -1 ) ) AND (  (`cat_id` =34 )  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 0 AND -1 ) ) AND (  (`cat_id` =34 )  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 0 AND -1 ) ) AND (  (`cat_id` =34 )  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000172s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 0 AND -1 ) ) AND (  (`cat_id` =34 )  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 0 AND -1 ) ) AND (  (`cat_id` =34 )  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 0 AND 0 ) ) AND ( `cat_id` = '34' ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.115663s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.007477s ]
+SQL: SELECT `search_attr_id` FROM `php34_category` WHERE ( `id` = 34 ) LIMIT 1   [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `php34_attribute` [ RunTime:0.007992s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Db.class.php 第 502 行.
+SQL: SELECT `id`,`attr_name` FROM `php34_attribute` WHERE ( `id` IN () )  [ RunTime:0.000347s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `id`,`attr_name` FROM `php34_attribute` WHERE ( `id` IN () ) 
+SQL: SHOW COLUMNS FROM `php34_goods_attr` [ RunTime:0.012775s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Home\Controller\SearchController.class.php 第 79 行.
+SQL: SELECT GROUP_CONCAT(DISTINCT goods_id) goods_id FROM `php34_goods_cat` WHERE ( `cat_id` = '34' ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =34 )  ) LIMIT 1   [ RunTime:0.000390s ]
+SQL: SELECT a.id,a.goods_name,`sm_logo`,`shop_price`,IFNULL(SUM(b.goods_number),0) xl,(SELECT count(id) FROM php34_comment c WHERE c.goods_id=a.id) pl FROM php34_goods a LEFT JOIN php34_order_goods b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM php34_order WHERE pay_status=1))  WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =34 )  ) GROUP BY a.id ORDER BY shop_price asc LIMIT 0,24   [ RunTime:0.000803s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004962s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000245s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 420 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 453 行.
+NOTIC: [8] Undefined variable: data E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 471 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2016-09-07T23:31:09+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000851s ]
+
+[ 2016-09-07T23:31:09+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2016-09-07T23:31:21+08:00 ] 127.0.0.1 /index.php/Home/Search/search/cid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.004503s ]
+SQL: SHOW COLUMNS FROM `php34_goods_cat` [ RunTime:0.004424s ]
+SQL: SELECT GROUP_CONCAT(DISTINCT goods_id) goods_id FROM `php34_goods_cat` WHERE ( `cat_id` = '6' ) LIMIT 1   [ RunTime:0.001089s ]
+SQL: SELECT MIN(shop_price) minprice,MAX(shop_price) maxprice FROM `php34_goods` WHERE (  (`cat_id` =6  OR id IN(2))  ) LIMIT 1   [ RunTime:0.053500s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 60 AND 1319 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000914s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 1320 AND 2579 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000674s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 2580 AND 3839 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000723s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 3840 AND 5099 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000673s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 5100 AND 6359 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000644s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 6360 AND 7619 ) ) AND (  (`cat_id` =6  OR id IN(2))  ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000788s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `php34_goods` WHERE (  (`shop_price` BETWEEN 7620 AND 8890 ) ) AND ( `cat_id` = '6' ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.011305s ]
+SQL: SELECT `search_attr_id` FROM `php34_category` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `php34_attribute` [ RunTime:0.006673s ]
+SQL: SELECT `id`,`attr_name` FROM `php34_attribute` WHERE ( `id` IN ('') )  [ RunTime:0.002158s ]
+SQL: SHOW COLUMNS FROM `php34_goods_attr` [ RunTime:0.004190s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Home\Controller\SearchController.class.php 第 79 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/702f6d8f948d338e56e15a1333ab749d.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT GROUP_CONCAT(DISTINCT goods_id) goods_id FROM `php34_goods_cat` WHERE ( `cat_id` = '6' ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =6 or a.id in(2))  ) LIMIT 1   [ RunTime:0.000460s ]
+SQL: SELECT a.id,a.goods_name,`sm_logo`,`shop_price`,IFNULL(SUM(b.goods_number),0) xl,(SELECT count(id) FROM php34_comment c WHERE c.goods_id=a.id) pl FROM php34_goods a LEFT JOIN php34_order_goods b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM php34_order WHERE pay_status=1))  WHERE ( a.is_on_sale = 1 ) AND ( a.is_delete = 0 ) AND (  (a.cat_id =6 or a.id in(2))  ) GROUP BY a.id ORDER BY xl DESC LIMIT 0,24   [ RunTime:0.001604s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.005327s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000213s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 150 行.
+NOTIC: [2] array_fill() [<a href='function.array-fill'>function.array-fill</a>]: Number of elements must be positive E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 420 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 420 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 453 行.
+NOTIC: [8] Undefined variable: data E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\dc21e6da2e1dbcec494898213c16ba46.php 第 471 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001781s ]
+
+[ 2016-09-07T23:31:21+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2016-09-07T23:31:21+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001218s ]
+

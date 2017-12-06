@@ -1,0 +1,39 @@
+<layout name="Index/header_footer" />
+<div class="form-div search_form_div">
+    <form method="GET" name="search_form">
+		<p>
+			添加时间：
+	   		从 <input id="addtimefrom" type="text" name="addtimefrom" size="15" value="<?php echo I('get.addtimefrom'); ?>" /> 
+		    到 <input id="addtimeto" type="text" name="addtimeto" size="15" value="<?php echo I('get.addtimeto'); ?>" />
+		</p>
+		<p><input type="submit" value=" 搜索 " class="button" /></p>
+    </form>
+</div>
+<!-- 列表 -->
+<div class="list-div" id="listDiv">
+	<table cellpadding="3" cellspacing="1">
+    	<tr>
+            <th >广告图</th>
+            <th >添加时间</th>
+            <th >是否启用</th>
+            <th width="60">操作</th>
+        </tr>
+            <?php foreach ($data as $k => $v): ?>            
+            <tr class="tron">
+                <td><?php showImage($v['advert'],50); ?></td>
+                <td>{$v['addtime']|date="y-m-d h:i",###}</td>
+                <td><?php echo $v['status']==1?'是':'否'; ?></td>
+                <td align="center">
+                    <a href="<?php echo U('edit?id='.$v['id'].'&p='.I('get.p')); ?>" title="编辑">编辑</a> |
+                    <a href="<?php echo U('delete?id='.$v['id'].'&p='.I('get.p')); ?>" onclick="return confirm('确定要删除吗？');" title="移除">移除</a> 
+                </td>
+            </tr>
+        <?php endforeach; ?> 
+        <?php if(preg_match('/\d/', $page)): ?>  
+        <tr><td align="right" nowrap="true" colspan="99" height="30"><?php echo $page; ?></td></tr> 
+        <?php endif; ?> 
+	</table>
+</div>
+<script>
+$('#addtimefrom').datepicker(); $('#addtimeto').datepicker(); 
+</script>

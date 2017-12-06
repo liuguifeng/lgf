@@ -1,0 +1,1058 @@
+[ 2016-09-05T10:20:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001690s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.208308s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1473042025 ) AND ( `promote_end_time` >= 1473042025 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.045133s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.017823s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001190s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000959s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.064974s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000754s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.312980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.313144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005321s ]
+
+[ 2016-09-05T10:20:26+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001128s ]
+
+[ 2016-09-05T10:20:26+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2016-09-05T10:20:29+08:00 ] 127.0.0.1 /index.php/Home/Member/regist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2016-09-05T10:20:29+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2016-09-05T10:20:29+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002511s ]
+
+[ 2016-09-05T10:21:07+08:00 ] 127.0.0.1 /index.php/Home/Member/regist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `php34_member` [ RunTime:0.084078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+
+[ 2016-09-05T10:21:10+08:00 ] 127.0.0.1 /index.php/Home/Member/regist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002376s ]
+
+[ 2016-09-05T10:21:10+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2016-09-05T15:10:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003642s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.010453s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1473059435 ) AND ( `promote_end_time` >= 1473059435 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.001255s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000398s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000393s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000419s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.018717s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000339s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.328673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.328769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001812s ]
+
+[ 2016-09-05T15:10:36+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001488s ]
+
+[ 2016-09-05T15:10:36+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002013s ]
+
+[ 2016-09-05T15:10:47+08:00 ] 127.0.0.1 /index.php/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001676s ]
+
+[ 2016-09-05T15:10:47+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2016-09-05T15:10:47+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001011s ]
+
+[ 2016-09-05T15:11:12+08:00 ] 127.0.0.1 /index.php/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `php34_member` [ RunTime:0.027816s ]
+SQL: SELECT * FROM `php34_member` WHERE ( `email` = 'lgfphp@163.com' ) LIMIT 1   [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `php34_member_level` [ RunTime:0.049165s ]
+SQL: SELECT `id`,`rate` FROM `php34_member_level` WHERE ( 0 between bottom_num and top_num ) LIMIT 1   [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `php34_cart` [ RunTime:0.067737s ]
+
+[ 2016-09-05T15:11:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.005164s ]
+SQL: SELECT `id`,`goods_name`,`promote_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1473059472 ) AND ( `promote_end_time` >= 1473059472 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000417s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000222s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000208s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`sm_logo` FROM `php34_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num asc LIMIT 5   [ RunTime:0.000207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004471s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000211s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2016-09-05T15:11:13+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001520s ]
+
+[ 2016-09-05T15:11:13+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2016-09-05T15:11:18+08:00 ] 127.0.0.1 /index.php/Home/Index/goods/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.006316s ]
+SQL: SELECT * FROM `php34_goods` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.083099s ]
+SQL: SHOW COLUMNS FROM `php34_goods_pics` [ RunTime:0.025628s ]
+SQL: SELECT * FROM `php34_goods_pics` WHERE ( `goods_id` = '1' )  [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `php34_goods_attr` [ RunTime:0.006179s ]
+SQL: SELECT a.*,b.attr_name FROM php34_goods_attr a LEFT JOIN php34_attribute b ON a.attr_id=b.id  WHERE ( a.goods_id = '1' ) AND ( b.attr_type = 1 )  [ RunTime:0.068207s ]
+SQL: SELECT a.*,b.attr_name FROM php34_goods_attr a LEFT JOIN php34_attribute b ON a.attr_id=b.id  WHERE ( a.goods_id = '1' ) AND ( b.attr_type = 0 )  [ RunTime:0.000378s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000558s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.008442s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000292s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 364 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001335s ]
+
+[ 2016-09-05T15:11:18+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2016-09-05T15:11:18+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetPrice/goods_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.006417s ]
+SQL: SELECT `shop_price`,`is_promote`,`promote_price`,`promote_start_time`,`promote_end_time` FROM `php34_goods` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `php34_member_price` [ RunTime:0.024345s ]
+SQL: SELECT `price` FROM `php34_member_price` WHERE ( `goods_id` = '1' ) AND ( `level_id` = '1' ) LIMIT 1   [ RunTime:0.035807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002464s ]
+
+[ 2016-09-05T15:11:18+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetComment/goods_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002239s ]
+
+[ 2016-09-05T15:11:18+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001721s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003064s ]
+
+[ 2016-09-05T15:11:20+08:00 ] 127.0.0.1 /index.php/Home/Comment/ajaxGetComment/p/1/goods_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `php34_comment` [ RunTime:0.038642s ]
+SQL: SELECT a.*,b.email,b.face,COUNT(c.id) reply_count FROM php34_comment a LEFT JOIN php34_member b ON a.member_id=b.id LEFT JOIN php34_reply c ON a.id=c.comment_id  WHERE ( a.goods_id = '1' ) GROUP BY a.id ORDER BY a.id DESC LIMIT 0,5   [ RunTime:0.006055s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Home\Controller\CommentController.class.php 第 52 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2016-09-05T15:11:50+08:00 ] 127.0.0.1 /index.php/Home/Comment/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `php34_comment` [ RunTime:0.015091s ]
+SQL: SHOW COLUMNS FROM `php34_impression` [ RunTime:0.006678s ]
+SQL: SELECT `id` FROM `php34_impression` WHERE ( `goods_id` = 1 ) AND ( `imp_name` = '没有影响' ) LIMIT 1   [ RunTime:0.000333s ]
+SQL: INSERT INTO `php34_impression` (`goods_id`,`imp_name`) VALUES (1,'没有影响') [ RunTime:0.000312s ]
+SQL: INSERT INTO `php34_comment` (`goods_id`,`star`,`content`,`addtime`,`member_id`) VALUES (1,3,'刘桂锋你真棒',1473059510,'3') [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `php34_member` [ RunTime:0.004705s ]
+SQL: SELECT `face` FROM `php34_member` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000305s ]
+
+[ 2016-09-05T15:11:59+08:00 ] 127.0.0.1 /index.php/Home/Index/goods/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.006237s ]
+SQL: SELECT * FROM `php34_goods` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SHOW COLUMNS FROM `php34_goods_pics` [ RunTime:0.005838s ]
+SQL: SELECT * FROM `php34_goods_pics` WHERE ( `goods_id` = '1' )  [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `php34_goods_attr` [ RunTime:0.004126s ]
+SQL: SELECT a.*,b.attr_name FROM php34_goods_attr a LEFT JOIN php34_attribute b ON a.attr_id=b.id  WHERE ( a.goods_id = '1' ) AND ( b.attr_type = 1 )  [ RunTime:0.000212s ]
+SQL: SELECT a.*,b.attr_name FROM php34_goods_attr a LEFT JOIN php34_attribute b ON a.attr_id=b.id  WHERE ( a.goods_id = '1' ) AND ( b.attr_type = 0 )  [ RunTime:0.000150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.005079s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000349s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 364 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+
+[ 2016-09-05T15:11:59+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.008376s ]
+SQL: SELECT `id`,`goods_name`,`sm_logo` FROM `php34_goods` WHERE ( `id` IN ('1') ) ORDER BY INSTR(',1,',CONCAT(',',id,','))  [ RunTime:0.026803s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2016-09-05T15:11:59+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetPrice/goods_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.004701s ]
+SQL: SELECT `shop_price`,`is_promote`,`promote_price`,`promote_start_time`,`promote_end_time` FROM `php34_goods` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SHOW COLUMNS FROM `php34_member_price` [ RunTime:0.004630s ]
+SQL: SELECT `price` FROM `php34_member_price` WHERE ( `goods_id` = '1' ) AND ( `level_id` = '1' ) LIMIT 1   [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2016-09-05T15:11:59+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetComment/goods_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2016-09-05T15:11:59+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001303s ]
+
+[ 2016-09-05T15:12:01+08:00 ] 127.0.0.1 /index.php/Home/Comment/ajaxGetComment/p/1/goods_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `php34_comment` [ RunTime:0.005746s ]
+SQL: SELECT a.*,b.email,b.face,COUNT(c.id) reply_count FROM php34_comment a LEFT JOIN php34_member b ON a.member_id=b.id LEFT JOIN php34_reply c ON a.id=c.comment_id  WHERE ( a.goods_id = '1' ) GROUP BY a.id ORDER BY a.id DESC LIMIT 0,5   [ RunTime:0.116072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002124s ]
+
+[ 2016-09-05T15:12:04+08:00 ] 127.0.0.1 /index.php/Home/Comment/ajaxGetComment/p/2/goods_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `php34_comment` [ RunTime:0.004222s ]
+SQL: SELECT a.*,b.email,b.face,COUNT(c.id) reply_count FROM php34_comment a LEFT JOIN php34_member b ON a.member_id=b.id LEFT JOIN php34_reply c ON a.id=c.comment_id  WHERE ( a.goods_id = '1' ) GROUP BY a.id ORDER BY a.id DESC LIMIT 5,5   [ RunTime:0.001397s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Home\Controller\CommentController.class.php 第 52 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2016-09-05T15:12:09+08:00 ] 127.0.0.1 /index.php/Home/Index/goods/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.004845s ]
+SQL: SELECT * FROM `php34_goods` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `php34_goods_pics` [ RunTime:0.004325s ]
+SQL: SELECT * FROM `php34_goods_pics` WHERE ( `goods_id` = '1' )  [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `php34_goods_attr` [ RunTime:0.004277s ]
+SQL: SELECT a.*,b.attr_name FROM php34_goods_attr a LEFT JOIN php34_attribute b ON a.attr_id=b.id  WHERE ( a.goods_id = '1' ) AND ( b.attr_type = 1 )  [ RunTime:0.000212s ]
+SQL: SELECT a.*,b.attr_name FROM php34_goods_attr a LEFT JOIN php34_attribute b ON a.attr_id=b.id  WHERE ( a.goods_id = '1' ) AND ( b.attr_type = 0 )  [ RunTime:0.000175s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.004553s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000189s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 364 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2016-09-05T15:12:09+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003108s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.007458s ]
+SQL: SELECT `id`,`goods_name`,`sm_logo` FROM `php34_goods` WHERE ( `id` IN ('1') ) ORDER BY INSTR(',1,',CONCAT(',',id,','))  [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001603s ]
+
+[ 2016-09-05T15:12:09+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002979s ]
+
+[ 2016-09-05T15:12:09+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetComment/goods_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001233s ]
+
+[ 2016-09-05T15:12:09+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetPrice/goods_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.005437s ]
+SQL: SELECT `shop_price`,`is_promote`,`promote_price`,`promote_start_time`,`promote_end_time` FROM `php34_goods` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000196s ]
+SQL: SHOW COLUMNS FROM `php34_member_price` [ RunTime:0.004655s ]
+SQL: SELECT `price` FROM `php34_member_price` WHERE ( `goods_id` = '1' ) AND ( `level_id` = '1' ) LIMIT 1   [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2016-09-05T15:12:12+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001639s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.009606s ]
+SQL: SELECT `id`,`goods_name`,`sm_logo` FROM `php34_goods` WHERE ( `id` IN ('1') ) ORDER BY INSTR(',1,',CONCAT(',',id,','))  [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003374s ]
+
+[ 2016-09-05T15:12:12+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2016-09-05T15:12:18+08:00 ] 127.0.0.1 /index.php/Home/Index/goods/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.004892s ]
+SQL: SELECT * FROM `php34_goods` WHERE ( `id` = 19 ) LIMIT 1   [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `php34_goods_pics` [ RunTime:0.004195s ]
+SQL: SELECT * FROM `php34_goods_pics` WHERE ( `goods_id` = '19' )  [ RunTime:0.089883s ]
+SQL: SHOW COLUMNS FROM `php34_goods_attr` [ RunTime:0.012059s ]
+SQL: SELECT a.*,b.attr_name FROM php34_goods_attr a LEFT JOIN php34_attribute b ON a.attr_id=b.id  WHERE ( a.goods_id = '19' ) AND ( b.attr_type = 1 )  [ RunTime:0.001282s ]
+SQL: SELECT a.*,b.attr_name FROM php34_goods_attr a LEFT JOIN php34_attribute b ON a.attr_id=b.id  WHERE ( a.goods_id = '19' ) AND ( b.attr_type = 0 )  [ RunTime:0.001200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.005777s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000286s ]
+NOTIC: [8] Undefined index: children E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHP\xuexiziliao\day60xiangmu\shop34\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2016-09-05T15:12:18+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetPrice/goods_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.005584s ]
+SQL: SELECT `shop_price`,`is_promote`,`promote_price`,`promote_start_time`,`promote_end_time` FROM `php34_goods` WHERE ( `id` = 19 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `php34_member_price` [ RunTime:0.004578s ]
+SQL: SELECT `price` FROM `php34_member_price` WHERE ( `goods_id` = '19' ) AND ( `level_id` = '1' ) LIMIT 1   [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2016-09-05T15:12:18+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentDisGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.005388s ]
+SQL: SELECT `id`,`goods_name`,`sm_logo` FROM `php34_goods` WHERE ( `id` IN ('1') ) ORDER BY INSTR(',1,',CONCAT(',',id,','))  [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001713s ]
+
+[ 2016-09-05T15:12:18+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetComment/goods_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2016-09-05T15:12:18+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2016-09-05T15:12:20+08:00 ] 127.0.0.1 /index.php/Home/Comment/ajaxGetComment/p/1/goods_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `php34_comment` [ RunTime:0.004682s ]
+SQL: SELECT a.*,b.email,b.face,COUNT(c.id) reply_count FROM php34_comment a LEFT JOIN php34_member b ON a.member_id=b.id LEFT JOIN php34_reply c ON a.id=c.comment_id  WHERE ( a.goods_id = '19' ) GROUP BY a.id ORDER BY a.id DESC LIMIT 0,5   [ RunTime:0.000886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2016-09-05T17:40:39+08:00 ] 127.0.0.1 /index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001626s ]
+
+[ 2016-09-05T17:40:39+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001152s ]
+
+[ 2016-09-05T17:40:52+08:00 ] 127.0.0.1 /index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+SQL: SHOW COLUMNS FROM `php34_admin` [ RunTime:0.032205s ]
+SQL: SELECT * FROM `php34_admin` WHERE ( `username` = 'root' ) LIMIT 1   [ RunTime:0.000427s ]
+
+[ 2016-09-05T17:40:52+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2016-09-05T17:40:53+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+SQL: SELECT * FROM php34_privilege [ RunTime:0.030423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000537s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005825s ]
+
+[ 2016-09-05T17:40:53+08:00 ] 127.0.0.1 /index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001342s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001550s ]
+
+[ 2016-09-05T17:40:53+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Index/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002978s ]
+
+[ 2016-09-05T17:40:55+08:00 ] 127.0.0.1 /index.php/Admin/Category/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SELECT COUNT(*) has FROM php34_privilege WHERE module_name="Admin" AND controller_name="Category" AND action_name="lst" [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `php34_category` [ RunTime:0.013935s ]
+SQL: SELECT * FROM `php34_category`  [ RunTime:0.000266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2016-09-05T17:41:01+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SELECT COUNT(*) has FROM php34_privilege WHERE module_name="Admin" AND controller_name="Goods" AND action_name="lst" [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.007585s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.008103s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php34_goods a left join php34_goods_number b on a.id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.id ORDER BY id desc LIMIT 0,20   [ RunTime:0.047140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001107s ]
+
+[ 2016-09-05T17:41:47+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html?goods_name=&cat_id=&brand_id=&shop_pricefrom=0&shop_priceto=100&is_hot=-1&is_new=-1&is_best=-1&is_on_sale=-1&type_id=&addtimefrom=&addtimeto=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SELECT COUNT(*) has FROM php34_privilege WHERE module_name="Admin" AND controller_name="Goods" AND action_name="lst" [ RunTime:0.000218s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.006055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( `is_delete` = 0 ) AND ( `shop_price` <= '100' ) LIMIT 1   [ RunTime:0.000605s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php34_goods a left join php34_goods_number b on a.id=b.goods_id  WHERE ( `is_delete` = 0 ) AND ( `shop_price` <= '100' ) GROUP BY a.id ORDER BY id desc LIMIT 0,20   [ RunTime:0.005617s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2016-09-05T17:43:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html?goods_name=&cat_id=&brand_id=&shop_pricefrom=0&shop_priceto=100&is_hot=-1&is_new=-1&is_best=-1&is_on_sale=-1&type_id=&addtimefrom=&addtimeto=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SELECT COUNT(*) has FROM php34_privilege WHERE module_name="Admin" AND controller_name="Goods" AND action_name="lst" [ RunTime:0.000212s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.006904s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( `is_delete` = 0 ) AND ( `shop_price` <= '100' ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php34_goods a left join php34_goods_number b on a.id=b.goods_id  WHERE ( `is_delete` = 0 ) AND ( `shop_price` <= '100' ) GROUP BY a.id ORDER BY id desc LIMIT 0,2   [ RunTime:0.007350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2016-09-05T17:43:42+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst/shop_pricefrom/0/shop_priceto/100/is_hot/-1/is_new/-1/is_best/-1/is_on_sale/-1/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+SQL: SELECT COUNT(*) has FROM php34_privilege WHERE module_name="Admin" AND controller_name="Goods" AND action_name="lst" [ RunTime:0.000138s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.004708s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( `is_delete` = 0 ) AND ( `shop_price` <= '100' ) LIMIT 1   [ RunTime:0.000249s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php34_goods a left join php34_goods_number b on a.id=b.goods_id  WHERE ( `is_delete` = 0 ) AND ( `shop_price` <= '100' ) GROUP BY a.id ORDER BY id desc LIMIT 2,2   [ RunTime:0.005014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2016-09-05T17:43:44+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst/shop_pricefrom/0/shop_priceto/100/is_hot/-1/is_new/-1/is_best/-1/is_on_sale/-1/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SELECT COUNT(*) has FROM php34_privilege WHERE module_name="Admin" AND controller_name="Goods" AND action_name="lst" [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.004767s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( `is_delete` = 0 ) AND ( `shop_price` <= '100' ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php34_goods a left join php34_goods_number b on a.id=b.goods_id  WHERE ( `is_delete` = 0 ) AND ( `shop_price` <= '100' ) GROUP BY a.id ORDER BY id desc LIMIT 0,2   [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001212s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001345s ]
+
+[ 2016-09-05T17:43:50+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SELECT COUNT(*) has FROM php34_privilege WHERE module_name="Admin" AND controller_name="Goods" AND action_name="lst" [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.006207s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000186s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php34_goods a left join php34_goods_number b on a.id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.id ORDER BY id desc LIMIT 0,2   [ RunTime:0.009169s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2016-09-05T17:43:55+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SELECT COUNT(*) has FROM php34_privilege WHERE module_name="Admin" AND controller_name="Goods" AND action_name="lst" [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.005998s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php34_goods a left join php34_goods_number b on a.id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.id ORDER BY id desc LIMIT 2,2   [ RunTime:0.008552s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2016-09-05T17:43:57+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SELECT COUNT(*) has FROM php34_privilege WHERE module_name="Admin" AND controller_name="Goods" AND action_name="lst" [ RunTime:0.000201s ]
+SQL: SHOW COLUMNS FROM `php34_goods` [ RunTime:0.005525s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php34_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000218s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php34_goods a left join php34_goods_number b on a.id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.id ORDER BY id desc LIMIT 4,2   [ RunTime:0.005402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+

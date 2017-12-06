@@ -1,0 +1,84 @@
+[ 2016-08-15T21:37:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002211s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+ (trying to connect via tcp://119.10.36.28:3306) E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+ E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+
+
+[ 2016-08-15T21:40:14+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+ (trying to connect via tcp://119.10.36.28:3306) E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+ E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+
+
+[ 2016-08-15T22:09:19+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+ (trying to connect via tcp://119.10.36.28:3306) E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+ E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+
+
+[ 2016-08-15T22:13:25+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+ (trying to connect via tcp://119.10.36.28:3306) E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+ E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+
+
+[ 2016-08-15T22:13:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+ (trying to connect via tcp://119.10.36.28:3306) E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+ E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+
+
+[ 2016-08-15T22:13:35+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+ (trying to connect via tcp://119.10.36.28:3306) E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+ E:\PHP\xuexiziliao\day60xiangmu\shop34\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+
+

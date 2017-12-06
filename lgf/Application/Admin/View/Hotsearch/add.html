@@ -1,0 +1,27 @@
+<layout name="Index/header_footer" />
+<div class="main-div">
+    <form name="main_form" method="POST" action="__SELF__" enctype="multipart/form-data">
+        <table cellspacing="1" cellpadding="3" width="100%">
+            <tr>
+                <td class="label">热门搜索词：</td>
+                <td>
+                    <input  type="text" name="word" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">排序：</td>
+                <td>
+                    <input  type="text" name="listorder" value="100" />（越小排越前）
+                </td>
+            </tr>
+            <tr>
+                <td colspan="99" align="center">
+                    <input type="submit" class="button" value=" 确定 " />
+                    <input type="reset" class="button" value=" 重置 " />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script>
+</script>
